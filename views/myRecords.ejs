@@ -1,0 +1,14 @@
+<%- include('./layout/header') %>
+
+<section>
+    <ul>
+        <% data.forEach(data=>{ %>
+            <li><%=data.country%></li>
+            <li><%=data.date%></li>
+
+            <a href="/details/<%= data.id %>">Show details</a>
+         <% }) %>
+    </ul>
+</section>
+
+<%- include('./layout/footer') %>
